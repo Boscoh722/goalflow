@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic Meta -->
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#0F172A" />
+
+    <!-- App Identity -->
+    <title>Goalfloww | Smart Goal Setting & Progress Tracking</title>
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Goalfloww is a modern goal-setting and management platform that helps individuals and teams plan, track progress, and achieve meaningful goals efficiently."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <meta
+      name="keywords"
+      content="Goalfloww, goal setting app, productivity app, task management, habit tracking, progress analytics, personal goals, team goals"
+    />
+    <meta name="author" content="Goalfloww" />
+
+    <!-- SEO: Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Goalfloww | Smart Goal Setting & Progress Tracking" />
+    <meta
+      property="og:description"
+      content="Plan better, track smarter, and achieve more with Goalfloww — your all-in-one goal management platform."
+    />
+    <meta property="og:url" content="https://goalfloww.com" />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+
+    <!-- SEO: Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Goalfloww | Smart Goal Setting & Progress Tracking" />
+    <meta
+      name="twitter:description"
+      content="A modern goal-setting and progress-tracking web app designed for clarity, focus, and results."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/og-image.png" />
+
+    <!-- Icons -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+
+    <!-- Manifest -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- Preconnect (performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      Goalfloww requires JavaScript to run. Please enable JavaScript in your browser.
+    </noscript>
+
+    <!-- App Root -->
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <!-- Static Logo Fallback (SEO + Branding) -->
+    <header
+      style="
+        display: none;
+      "
+      aria-hidden="true"
+    >
+      <img
+        src="%PUBLIC_URL%/Goalfloww logo.png"
+        alt="Goalfloww logo - Goal setting and management platform"
+      />
+      <h1>Goalfloww</h1>
+      <p>Smart Goal Setting & Progress Tracking</p>
+    </header>
   </body>
 </html>
