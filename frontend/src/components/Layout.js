@@ -124,19 +124,43 @@ const Layout = () => {
       </main>
 
       {/* Footer */}
-      <footer className="glass-card border-t mt-12">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-3 mb-4 md:mb-0">
-              <Target className="text-primary-600" size={24} />
-              <span className="text-xl font-heading font-bold">GoalFlow</span>
-            </div>
-            <p className="text-gray-600 text-center md:text-right">
-              Track your progress, achieve your dreams. © {new Date().getFullYear()}
-            </p>
-          </div>
-        </div>
-      </footer>
+<footer className="glass-card border-t mt-12">
+  <div className="container mx-auto px-4 py-6">
+    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+      
+      {/* App Branding */}
+      <div className="flex items-center space-x-3">
+        <Target className="text-primary-600" size={24} />
+        <span className="text-xl font-heading font-bold">GoalFlow</span>
+      </div>
+
+      {/* Footer Text */}
+      <div className="text-center md:text-right space-y-1">
+        <p className="text-gray-600">
+          Track your progress, achieve your dreams.
+        </p>
+        <p className="text-sm text-gray-500">
+          © {new Date().getFullYear()} GoalFlow
+        </p>
+
+        {/* Contact Developer */}
+        <p className="text-sm text-gray-500">
+          Contact Developer:{' '}
+          <a
+            href="https://boscohportfolio.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary-600 hover:text-primary-700 font-medium underline underline-offset-2"
+          >
+            Bosco Brilliant
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
     </div>
   );
 };
