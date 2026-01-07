@@ -1,72 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Basic Meta -->
+    <!-- Core Meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0F172A" />
 
-    <!-- App Identity -->
-    <title>Goalfloww | Smart Goal Setting & Progress Tracking</title>
+    <!-- Primary SEO -->
+    <title>Goalfloww – Smart Goal Setting & Progress Tracking</title>
     <meta
       name="description"
-      content="Goalfloww is a modern goal-setting and management platform that helps individuals and teams plan, track progress, and achieve meaningful goals efficiently."
+      content="Goalfloww is a modern goal-setting and progress-tracking platform that helps individuals and teams plan clearly, stay accountable, and achieve meaningful results."
     />
     <meta
       name="keywords"
-      content="Goalfloww, goal setting app, productivity app, task management, habit tracking, progress analytics, personal goals, team goals"
+      content="Goalfloww, goal setting app, productivity software, task tracking, habit tracker, progress analytics, personal goals, team performance"
     />
     <meta name="author" content="Goalfloww" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://goalfloww.vercel.app/" />
 
-    <!-- SEO: Open Graph (Facebook, LinkedIn) -->
+    <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Goalfloww | Smart Goal Setting & Progress Tracking" />
+    <meta property="og:site_name" content="Goalfloww" />
+    <meta property="og:title" content="Goalfloww – Smart Goal Setting & Progress Tracking" />
     <meta
       property="og:description"
-      content="Plan better, track smarter, and achieve more with Goalfloww — your all-in-one goal management platform."
+      content="Plan smarter, track progress effortlessly, and achieve more with Goalfloww."
     />
     <meta property="og:url" content="https://goalfloww.vercel.app/" />
-    <meta property="og:image" content="%PUBLIC_URL%/Goalfloww logo.png" />
+    <meta
+      property="og:image"
+      content="https://goalfloww.vercel.app/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-    <!-- SEO: Twitter -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Goalfloww | Smart Goal Setting & Progress Tracking" />
+    <meta name="twitter:title" content="Goalfloww – Smart Goal Setting & Progress Tracking" />
     <meta
       name="twitter:description"
-      content="A modern goal-setting and progress-tracking web app designed for clarity, focus, and results."
+      content="A modern goal-setting and productivity platform built for clarity and results."
     />
-    <meta name="twitter:image" content="%PUBLIC_URL%/Goalfloww logo.png" />
+    <meta
+      name="twitter:image"
+      content="https://goalfloww.vercel.app/og-image.png"
+    />
+
     <!-- Icons -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/goalfloww-logo.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
 
-    <!-- Manifest -->
+    <!-- PWA -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <!-- Preconnect (performance) -->
+    <!-- Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
 
   <body>
     <noscript>
-      Goalfloww requires JavaScript to run. Please enable JavaScript in your browser.
+      <strong>Goalfloww</strong> requires JavaScript to function properly.
+      Please enable JavaScript to continue.
     </noscript>
 
-    <!-- App Root -->
+    <!-- React Root -->
     <div id="root"></div>
 
-    <!-- Static Logo Fallback (SEO + Branding) -->
-    <header
-      style="
-        display: none;
-      "
-      aria-hidden="true"
-    >
+    <!-- SEO Fallback Content (non-visual) -->
+    <header aria-hidden="true" hidden>
       <img
-        src="%PUBLIC_URL%/Goalfloww logo.png"
-        alt="Goalfloww logo - Goal setting and management platform"
+        src="%PUBLIC_URL%/goalfloww-logo.svg"
+        alt="Goalfloww logo"
       />
       <h1>Goalfloww</h1>
       <p>Smart Goal Setting & Progress Tracking</p>
